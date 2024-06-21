@@ -6,4 +6,4 @@ if [ -f equal ]; then
 fi
 
 RELEASE=$(echo nomad_*.deb)
-upload_package upload --distro buster,bullseye,bookworm public_apt "$RELEASE"
+deployer upload --distro bullseye,bookworm public_apt "$RELEASE"
